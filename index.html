@@ -1,10 +1,38 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
     </head>
     <body>
         <div class="box">
+            <form>
+                <input id="Joke" type="submit" value="Submit"/>
+                <p id="output">output</p>
+            </form>
             <p>TEMP PARAGRAPH</p>
         </div>
+        
+        <script>
+        $(document).ready(function() {
+                console.log("ready")
+                $("#Joke").click(function(e){
+                    console.log("here")
+                   e.preventDefault();
+                   var myURL = "http://api.icndb.com/jokes/random/";
+                   console.log(myURL);
+                   $.ajax({
+                        url : myURL,
+                        dataType : "json",
+                        success : function(parsed_json) {
+                            var joke = parsed_json['value']['joke'];
+                            console.log(joke)
+                            $("#output").html(joke);
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
