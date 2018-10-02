@@ -5,14 +5,25 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js">
         </script>
     </head>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
     <body>
-        <div class="box">
-            <form>
-                <input id="Joke" type="submit" value="New Joke"/>
-                <p id="output">output</p>
-            </form>
-            <p>TEMP PARAGRAPH</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 align-items-center">
+                    <div class="box">
+                        <div class="info-text">Welcome to the Chuck Norris Joke Generator</div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <form>
+            <input id="Joke" type="submit" value="New Joke"/>
+            <p id="output">output</p>
+        </form>
         
         <script>
         $(document).ready(function() {

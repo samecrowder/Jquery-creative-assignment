@@ -1,5 +1,12 @@
 .box {
-    color: red;
+    background-color: black;
+    border: 2px solid grey;
+    display: inline-block
+}
+
+.info-text {
+    color: white;
+    display: inline-block
 }
 
 body { 
