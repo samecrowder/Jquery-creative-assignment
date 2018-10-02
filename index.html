@@ -8,7 +8,7 @@
     <body>
         <div class="box">
             <form>
-                <input id="Joke" type="submit" value="Submit"/>
+                <input id="Joke" type="submit" value="New Joke"/>
                 <p id="output">output</p>
             </form>
             <p>TEMP PARAGRAPH</p>
@@ -20,7 +20,7 @@
                 $("#Joke").click(function(e){
                     console.log("here")
                    e.preventDefault();
-                   var myURL = "http://api.icndb.com/jokes/random/";
+                   var myURL = "http://api.icndb.com/jokes/random/exclude[explicit]";
                    console.log(myURL);
                    $.ajax({
                         url : myURL,

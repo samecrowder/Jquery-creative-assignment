@@ -8,3 +8,8 @@ body {
     background-attachment: fixed;
     background-position: center; 
 }
+
+#Joke{
+    width: 100px;
+    height: 50px;
+}
