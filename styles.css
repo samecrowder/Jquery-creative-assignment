@@ -1,12 +1,15 @@
-.box {
+.title-box {
     background-color: black;
-    border: 2px solid grey;
-    display: inline-block
+    border: 2px solid white;
+    display: table;
+    margin: 1em auto 1em auto;
+    padding: 0.5em;
 }
 
-.info-text {
+.title-text {
     color: white;
-    display: inline-block
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 200%;
 }
 
 body { 
@@ -16,7 +19,7 @@ body {
     background-position: center; 
 }
 
-#Joke{
+#joke{
     width: 100px;
     height: 50px;
 }

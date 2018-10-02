@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css"/>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js">
-        </script>
-    </head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        
         <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-12 align-items-center">
-                    <div class="box">
-                        <div class="info-text">Welcome to the Chuck Norris Joke Generator</div>
-                    </div>
+            <div class="row padding-xl">
+                <div class="title-box">
+                    <div class="title-text">Welcome to the Chuck Norris Joke Generator</div>
                 </div>
             </div>
         </div>
         
         <form>
-            <input id="Joke" type="submit" value="New Joke"/>
+            <input id="joke" type="submit" value="New Joke"/>
             <p id="output">output</p>
         </form>
         
         <script>
-        $(document).ready(function() {
+            $(document).ready(function() {
                 console.log("ready")
-                $("#Joke").click(function(e){
+                $("#joke").click(function(e){
                     console.log("here")
                    e.preventDefault();
                    var myURL = "http://api.icndb.com/jokes/random/exclude[explicit]";
