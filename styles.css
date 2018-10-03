@@ -20,13 +20,13 @@ body {
 }
 
 .fright{
-    float: left;
+    float: right;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .fleft{
-    float: right;
+    float: left;
     padding-top: 20px;
     padding-bottom: 20px;
 }
