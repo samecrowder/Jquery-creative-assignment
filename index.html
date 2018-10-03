@@ -29,9 +29,7 @@
                                 <cite title="Source Title">Internet Database</cite>
                             </footer>
                             <div class="fright">
-                                <form>
-                                    <input id="joke" type="submit" value="New Joke"/>
-                                </form>
+                                <button class="btn btn-success" id="getjoke">New Joke</button>
                             </div>
                         </blockquote>
                     </div>
@@ -42,7 +40,7 @@
         <script>
             $(document).ready(function() {
                 console.log("ready")
-                $("#joke").click(function(e){
+                $("#getjoke").click(function(e){
                     console.log("here")
                    e.preventDefault();
                    var myURL = "http://api.icndb.com/jokes/random/exclude[explicit]";
