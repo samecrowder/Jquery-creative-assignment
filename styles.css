@@ -24,3 +24,9 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.fleft{
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
