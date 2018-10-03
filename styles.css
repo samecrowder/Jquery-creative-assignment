@@ -31,11 +31,16 @@ body {
     padding-bottom: 20px;
 }
 
-.text-70 {
-    font-size: 70%;
-}
-
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.name-input-row {
+    margin: 2em 0 2em 0;
 }

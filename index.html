@@ -28,12 +28,12 @@
                                 Chuck Norris
                                 <cite title="Source Title">Internet Database</cite>
                             </footer>
-                            <div class="row">
+                            <div class="row vertical-align name-input-row">
                                 <div class="col-sm-3 nopadding">
-                                    <p class="text-70">Input any name here to replace 'Chuck Norris': </p>
+                                    <p>Input any name here to replace 'Chuck Norris'</p>
                                 </div>
                                 <div class="col-sm-9 nopadding">
-                                    <input id="joke_name" type="text">
+                                    <input id="joke-name" type="text" value="Chuck Norris">
                                 </div>
                             </div>
                             <div class="row">
@@ -56,11 +56,14 @@
         
         <script>
             $(document).ready(function() {
-                console.log("ready");
                 $("#getjoke").click(function(e){
-                    console.log("here");
                    e.preventDefault();
                    var myURL = "http://api.icndb.com/jokes/random/exclude[explicit]";
+                   var name = $('#joke-name').val().split(' ');
+                   var firstName = name[0];
+                   var lastName = name[1];
+                   myURL += "?firstName=" + firstName;
+                   myURL += "&lastName=" + lastName;
                    console.log(myURL);
                    $.ajax({
                         url : myURL,
